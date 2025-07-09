@@ -9,6 +9,7 @@
 			"executorMemory": "28g",
 			"executorCores": 4,
 			"numExecutors": 2,
+			"runAsWorkspaceSystemIdentity": false,
 			"conf": {
 				"spark.dynamicAllocation.enabled": "false",
 				"spark.dynamicAllocation.minExecutors": "2",
@@ -19,10 +20,6 @@
 		"metadata": {
 			"saveOutput": true,
 			"enableDebugMode": false,
-			"kernelspec": {
-				"name": "synapse_pyspark",
-				"display_name": "python"
-			},
 			"language_info": {
 				"name": "python"
 			},
@@ -33,8 +30,7 @@
 				"cell_type": "code",
 				"source": [
 					"fdfsf"
-				],
-				"execution_count": null
+				]
 			}
 		]
 	}

@@ -30,5 +30,6 @@
 			"schema": "dbo",
 			"table": "Employees"
 		}
-	}
+	},
+	"type": "Microsoft.Synapse/workspaces/datasets"
 }
