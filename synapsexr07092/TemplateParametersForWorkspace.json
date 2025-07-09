@@ -1,0 +1,39 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"workspaceName": {
+			"value": "synapsexr07092"
+		},
+		"AzureBlobStorage1_connectionString": {
+			"value": ""
+		},
+		"AzureSqlDatabase1_connectionString": {
+			"value": ""
+		},
+		"AzureSqlDatabase2_password": {
+			"value": ""
+		},
+		"synapsexr0709-WorkspaceDefaultSqlServer_connectionString": {
+			"value": "Integrated Security=False;Encrypt=True;Connection Timeout=30;Data Source=tcp:synapsexr0709.sql.azuresynapse.azure.cn,1433;Initial Catalog=@{linkedService().DBName}"
+		},
+		"synapsexr07092-WorkspaceDefaultSqlServer_connectionString": {
+			"value": "Integrated Security=False;Encrypt=True;Connection Timeout=30;Data Source=tcp:synapsexr07092.sql.azuresynapse.azure.cn,1433;Initial Catalog=@{linkedService().DBName}"
+		},
+		"AzureSqlDatabase2_properties_typeProperties_server": {
+			"value": "sqlserver001.database.chinacloudapi.cn"
+		},
+		"AzureSqlDatabase2_properties_typeProperties_database": {
+			"value": "test001"
+		},
+		"AzureSqlDatabase2_properties_typeProperties_userName": {
+			"value": "admin123"
+		},
+		"synapsexr0709-WorkspaceDefaultStorage_properties_typeProperties_url": {
+			"value": "https://abctest0624.dfs.core.chinacloudapi.cn"
+		},
+		"synapsexr07092-WorkspaceDefaultStorage_properties_typeProperties_url": {
+			"value": "https://abctest0624.dfs.core.chinacloudapi.cn"
+		}
+	}
+}
