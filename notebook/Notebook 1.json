@@ -1,0 +1,82 @@
+{
+	"name": "Notebook 1",
+	"properties": {
+		"nbformat": 4,
+		"nbformat_minor": 2,
+		"bigDataPool": {
+			"referenceName": "pool",
+			"type": "BigDataPoolReference"
+		},
+		"sessionProperties": {
+			"driverMemory": "28g",
+			"driverCores": 4,
+			"executorMemory": "28g",
+			"executorCores": 4,
+			"numExecutors": 2,
+			"runAsWorkspaceSystemIdentity": false,
+			"conf": {
+				"spark.dynamicAllocation.enabled": "false",
+				"spark.dynamicAllocation.minExecutors": "2",
+				"spark.dynamicAllocation.maxExecutors": "2",
+				"spark.autotune.trackingId": "9e0a1475-d8c2-4403-afc2-e35f09674cdb"
+			}
+		},
+		"metadata": {
+			"saveOutput": true,
+			"synapse_widget": {
+				"version": "0.1"
+			},
+			"enableDebugMode": false,
+			"language_info": {
+				"name": "sql"
+			},
+			"a365ComputeOptions": {
+				"id": "/subscriptions/5bbf0cbb-647d-4bd8-b4e6-26629f109bd7/resourceGroups/apprest/providers/Microsoft.Synapse/workspaces/synapsexr0709/bigDataPools/pool",
+				"name": "pool",
+				"type": "Spark",
+				"endpoint": "https://synapsexr0709.dev.azuresynapse.azure.cn/livyApi/versions/2019-11-01-preview/sparkPools/pool",
+				"auth": {
+					"type": "AAD",
+					"authResource": "https://dev.azuresynapse.net",
+					"authHeader": null
+				},
+				"sparkVersion": "3.4",
+				"nodeCount": 10,
+				"cores": 4,
+				"memory": 28,
+				"extraHeader": null
+			},
+			"sessionKeepAliveTimeout": 30
+		},
+		"cells": [
+			{
+				"cell_type": "code",
+				"source": [
+					"SELECT TOP (1000) [action_id]\n",
+					"      ,[sequence_id]\n",
+					"      ,[instance_id]\n",
+					"      ,[action_type]\n",
+					"      ,[action_type_name]\n",
+					"      ,[dac_object_type]\n",
+					"      ,[dac_object_type_name]\n",
+					"      ,[action_status]\n",
+					"      ,[action_status_name]\n",
+					"      ,[required]\n",
+					"      ,[dac_object_name_pretran]\n",
+					"      ,[dac_object_name_posttran]\n",
+					"      ,[sqlscript]\n",
+					"      ,[payload]\n",
+					"      ,[comments]\n",
+					"      ,[error_string]\n",
+					"      ,[created_by]\n",
+					"      ,[date_created]\n",
+					"      ,[date_modified]\n",
+					"  FROM [dbo].[sysdac_history_internal]\n",
+					"\n",
+					""
+				],
+				"execution_count": 4
+			}
+		]
+	}
+}
