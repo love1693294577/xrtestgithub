@@ -1,5 +1,5 @@
 {
-	"name": "Notebook 1",
+	"name": "2",
 	"properties": {
 		"nbformat": 4,
 		"nbformat_minor": 2,
@@ -13,7 +13,7 @@
 				"spark.dynamicAllocation.enabled": "false",
 				"spark.dynamicAllocation.minExecutors": "2",
 				"spark.dynamicAllocation.maxExecutors": "2",
-				"spark.autotune.trackingId": "b743bded-30e8-46c8-9dbb-ff4f0dc32830"
+				"spark.autotune.trackingId": "74e7469f-f29a-40d1-989c-f6beb59678b4"
 			}
 		},
 		"metadata": {
